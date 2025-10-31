@@ -6,7 +6,8 @@ Chess Arena is a chess analysis and study tool built with React, Tailwind CSS, a
 
 ### Homepage
 
-![Homepage screenshot](https://raw.githubusercontent.com/shadcn/chess-arena/main/docs/screenshots/homepage.png)
+HomePage.png
+
 
 ### Chessboard
 

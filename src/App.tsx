@@ -45,6 +45,7 @@ export default function App() {
   const [autoPlaySpeed, setAutoPlaySpeed] = useState(1000); // ms per move
   const [autoPlayInterval, setAutoPlayInterval] =
     useState<NodeJS.Timeout | null>(null);
+
   const [evaluations, setEvaluations] = useState<number[]>([]);
   const [soundEnabled, setSoundEnabled] = useState(true);
   const [theme, setTheme] = useState<"light" | "dark">("light");
