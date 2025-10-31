@@ -1,74 +1,29 @@
-# React + TypeScript + Vite
+# Chess Arena
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Chess Arena is a chess analysis and study tool built with React, Tailwind CSS, and the Chess.js library. It provides a simple and intuitive interface for analyzing chess games and positions.
 
-Currently, two official plugins are available:
+## Screenshots
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Homepage
 
-## React Compiler
+![Homepage screenshot](https://raw.githubusercontent.com/shadcn/chess-arena/main/docs/screenshots/homepage.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Chessboard
 
-## Expanding the ESLint configuration
+![Chessboard screenshot](https://raw.githubusercontent.com/shadcn/chess-arena/main/docs/screenshots/chessboard.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Evaluation Graph
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+![Evaluation Graph screenshot](https://raw.githubusercontent.com/shadcn/chess-arena/main/docs/screenshots/evaluation-graph.png)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Move History
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+![Move History screenshot](https://raw.githubusercontent.com/shadcn/chess-arena/main/docs/screenshots/move-history.png)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Engine Selection
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+![Engine Selection screenshot](https://raw.githubusercontent.com/shadcn/chess-arena/main/docs/screenshots/engine-selection.png)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# Chess-Arena
+### Settings Panel
+
+![Settings Panel screenshot](https://raw.githubusercontent.com/shadcn/chess-arena/main/docs/screenshots/settings-panel.png)
