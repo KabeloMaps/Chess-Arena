@@ -12,6 +12,8 @@ import { ReplayControls } from "./components/ReplayControls";
 import { SettingsPanel } from "./components/SettingsPanel";
 import { StatusDisplay } from "./components/StatusDisplay";
 import { EvaluationGraph } from "./components/EvaluationGraph";
+import { ChessEngine, ENGINE_CONFIGS } from "./lib/engineSimulator";
+import { soundEffects } from "./lib/soundeffects";
 
 export type Engine = {
   id: string;
@@ -38,6 +40,7 @@ export default function App() {
   const [lastMove, setLastMove] = useState<{ from: string; to: string } | null>(
     null
   );
+
   const [isFlipped, setIsFlipped] = useState(false);
   const [autoPlaySpeed, setAutoPlaySpeed] = useState(1000); // ms per move
   const [autoPlayInterval, setAutoPlayInterval] =

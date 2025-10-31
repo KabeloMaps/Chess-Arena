@@ -9,6 +9,8 @@
     }
   ],
   "compilerOptions": {
+    "types": ["node", "react", "react-dom"],
+
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
@@ -17,7 +19,6 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "target": "ESNext",
-    "lib": ["DOM", "ESNext"],
-    "types": ["node"]
+    "lib": ["DOM", "ESNext"]
   }
 }
